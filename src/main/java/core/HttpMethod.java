@@ -10,4 +10,10 @@ public enum HttpMethod {
 
     private HttpMethod() {
     }
+    private void HttpMethod1() {
+    }
+
+    private void HttpMethod2() {
+    }
+
 }
