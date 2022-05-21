@@ -24,6 +24,10 @@ public class DriverFactory {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.parseLong(Config.getProperty("pageLoadTimeout"))));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(Config.getProperty("implicitWait"))));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.parseLong(Config.getProperty("pageLoadTimeout"))));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(Config.getProperty("implicitWait"))));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.parseLong(Config.getProperty("pageLoadTimeout"))));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(Config.getProperty("implicitWait"))));
 		return driver;
 	}
 	
